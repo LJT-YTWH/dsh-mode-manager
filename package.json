@@ -1,0 +1,56 @@
+{
+  "name": "@local/dsh-mode-manager",
+  "version": "1.4.1",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness plugin: create, edit, delete and repair agent presets (modes) from a left-sidebar page.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "agent-preset",
+    "mode",
+    "preset"
+  ],
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "meta": {
+    "title": "模式管理 / Mode manager",
+    "description": "在左侧栏创建、编辑、删除 Agent 预设（模式）并设为默认；删除后扫描受影响的会话并提供批量修复，自建预设自动备份、可恢复。"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

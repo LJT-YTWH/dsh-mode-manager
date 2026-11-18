@@ -1,0 +1,3 @@
+- insert:
+    - id: mode-manager-host
+      name: '@local/dsh-mode-manager'

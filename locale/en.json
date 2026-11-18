@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Mode manager",
+    "description": "Create agent presets (modes) from templates, capability picks, or a verbatim import of an official mode; edit, delete and set defaults, with backups and session repair. Built-in modes stay read-only.",
+    "detail": "docs/DETAIL.md"
+  }
+}
