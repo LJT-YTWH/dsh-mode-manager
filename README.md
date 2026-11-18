@@ -103,4 +103,4 @@ dsh plugin --profile <profile> add /绝对路径/dsh-mode-manager
 
 ## 许可证
 
-MIT。图标与预览图均为本项目原创 SVG，无外部素材。
+本项目使用 [MIT License](LICENSE)。图标与预览图均为本项目原创 SVG，无外部素材。
